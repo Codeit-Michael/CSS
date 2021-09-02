@@ -1,1 +1,113 @@
-blank
+## ABOUT CSS ##
+ 
+*CSS Syntax
+
+-Selector - like variables in programming
+-Declaration - style attributes separated by semicolons. (selector) {Declaration}
+	Declaration has 2 parts:
+	-Property - characteristic you want to access/modify. Ex: 'color','font',etc.
+	-Value - value of the property. It can be: 'px','%',etc.
+
+	(selector) {(property):(value);}
+Ex:	h1 {color:blue;text-align:center;}
+
+
+
+*CSS Selector
+
+- Selects the html elements base on their selector and/or element name
+
+	h1 {color:blue;text-align:center;}
+
+- Here, all <h1> elements will be color blue and aligned to center.
+
+
+CSS ID Selector 
+- The id selector uses the id attribute of an HTML element to select a specific 
+element. The id of an element is unique within a page, so the id selector is used to 
+select one unique element. To select an element with a specific id, write a hash (#) 
+character, followed by the id of the element.
+
+	In CSS:
+	#para1 {
+		text-align: center;
+		color: red;
+	}
+
+	Render in HTML:
+	<p id="para1">Hello World</p>
+
+
+CSS Class Selector
+- The class selector selects HTML elements with a specific class attribute. To select 
+elements with a specific class, write a period (.) character, followed by the class 
+name.
+
+	In CSS:
+	.center {
+		text-align: center;
+		color: red;
+	}
+
+	Render in HTML:
+	<p class="">Hello World</p>
+
+- You can also specify what HTML tag should be afftected: p.center {code}
+
+
+-HTML elements can also refer to more than one class.
+
+	In CSS:
+	.center {
+		text-align: center;
+		color: red;
+	}
+
+	.large {
+		font-size: 300%;
+	}
+
+	Render in HTML:
+	<p class="center large">Hello World</p>
+
+
+CSS Grouping Selector
+- CSS grouping selector selects all the HTML elements with the same style definitions.
+
+	h2 {
+		text-align: center;
+		color: red;
+	}
+
+	p {
+		text-align: center;
+		color: red;
+	}
+
+- They have the same code so we can do:
+	
+	h2,p {
+		text-align: center;
+		color: red;
+	}
+
+
+CSS Universal Selector
+- It will render on all tags even if you dont render it. CSS: * {color:blue;}
+
+
+
+*Adding CSS
+Three Ways to Insert CSS:
+	-External CSS - by importing
+		<link rel="stylesheet" href="style.css">
+
+	-Internal CSS - style tag inside the head tag in html
+		<head>
+			<style>
+				.styles {}
+			</style>
+		</head>
+
+	-Inline CSS - style attributes by line
+		<p style="">Hello World</p>

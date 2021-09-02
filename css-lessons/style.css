@@ -1,3 +1,16 @@
-.style {
-    bobo ka
+/*id based selector*/
+#para1 {
+	text-align: center;
+	color: orange;
+	background-color: grey;
 }
+
+
+/*class based selector*/
+.center {
+  text-align: center;
+  color: red;
+}
+
+.large {
+  font-size: 300%;
