@@ -111,3 +111,36 @@ Three Ways to Insert CSS:
 
 	-Inline CSS - style attributes by line
 		<p style="">Hello World</p>
+
+
+
+*CSS Colors
+
+Background Color
+- A style attribute that change the background color of the HTML element selected. EX:
+
+	<h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+
+Text Color
+- A style attribute that change the text color of selected element. EX:
+
+	<h1 style="color:Tomato;">Hello World</h1>
+
+
+Border Color
+- style attribute for border colors. EX:
+
+	<h1 style="border:2px solid Tomato;">Hello World</h1>
+
+
+Color Values
+- Besides of using color names lik 'Tomato', you can also use rgb,hex and hsl values:
+
+	<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+	<h1 style="background-color:#ff6347;">...</h1>
+	<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+	<!-- Same as color tomato but 50% transparent -->
+	<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+	<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
