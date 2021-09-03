@@ -144,3 +144,47 @@ Color Values
 	<!-- Same as color tomato but 50% transparent -->
 	<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
 	<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+
+--RGB Colors - rgb(red, blue, green)
+- Defines the color intesity between 0 - 255. For example, (255,0,0) is red, 
+(0,0,0) is black and (225,255,255) is white.
+
+RGBA Value - rgba(red, blue, green, alpha)
+- alpha parameter is the number between 0.0 and 0.1 that controlls the transparency
+
+
+--HEX/Hexadecimal Colors - #rrggbb
+- Counts in between of 00 - ff. How to count in HEX? First count from 00 to 09 followed by 
+0a - 0f and next of it is 10 means the f is the greatest single value. #ff0000 is red, 
+#00000 is black and #ffffff is white.
+
+3 Digit HEX Color - #rgb
+- Only applicable if values of each component (rr,gg and bb) has the same value (means r = r, and 
+so on).
+
+
+--HSL Colors - hsl(hue, saturation, lightness)
+- Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. 
+Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white.
+
+  Saturation can be described as the intensity of a color. 100% is pure color, no shades of 
+gray 50% is 50% gray, but you can still see the color. 0% is completely gray, you can no 
+longer see the color.
+
+  The lightness of a color can be described as how much light you want to give the color, 
+where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full 
+lightness (white).
+
+  Shades of gray are often defined by setting the hue and saturation to 0, and adjust the 
+lightness from 0% to 100% to get darker/lighter shades.
+
+--HSLA Color - hsla(hue, saturation, lightness, alpha)
+- Just like we discuss earlier, it also controlls the transparency: hsla(0, 100%, 50%, 0.5)
+
+
+
+*CSS Background
+- Except from colors, there are plenty of background you could use for CSS.
+It can be 
