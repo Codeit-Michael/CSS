@@ -186,5 +186,104 @@ lightness from 0% to 100% to get darker/lighter shades.
 
 
 *CSS Background
-- Except from colors, there are plenty of background you could use for CSS.
-It can be 
+- Except from colors, there are plenty of background you could use for CSS like image, etc.
+- Now we will learn about: background-color, background-image, background-repeat, 
+background-attachment, background-position, background(shorthand property)
+
+
+CSS background-color
+- "background-color" property specifies background color of the element.
+
+
+--Opacity/ Transparency
+- "opacity" property controlls the transparency of an element.
+
+	div {
+		background-color: green;
+		opacity: 0.3;
+	}
+
+-Its con is all of the elements inside the element where you put it will be also affected 
+(like p tags). You can controll the opacity/transparency using this or using what we discuss 
+earlier about alpha.
+
+
+CSS background-image
+- "background-image" property allows you to use an image to use as a background of an element.
+- By the default, the image is repeated to cover the chosen whole page. In using image backgrounds,
+you should use a  not disturbing picture.
+
+	body {
+		background-image: url("paper.gif");
+	}
+
+
+CSS background-repeat
+- Image background can repeat automatically but on some images, it looks like a mess like  
+when you use the gradiented bottom image, you're seeing the bounds of the first one and the 
+repeated one. In this cases, "background-repeat" property should use.
+
+- If the image repeated horizontally, you should use "background-repeat: repeat-x;" for x axis:
+
+	body {
+		background-image: url("gradient_bg.png");
+		background-repeat: repeat-x;
+	}
+
+- And if you want to repeat an image vertically, use "background-repeat: repeat-y;"
+
+--CSS no-repeat background
+- Show image background only once by "background-image: no-repeat;"
+
+
+CSS background-position
+- For positiioning your background, mostly useful if you have an image/icon background.
+
+	body {
+		background-image: url("img_tree.png");
+		background-repeat: no-repeat;
+		background-position: right top;
+		margin-right: 200px;
+	}
+
+
+CSS background-attachment
+- "background-attachment" property specifies whether the background image should scroll or be 
+fixed (will not scroll with the rest of the page).
+
+	body {
+		background-image: url("img_tree.png");
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-attachment: fixed;
+	}
+
+- If you want to scroll it: "background-attachment: scroll;"
+
+
+CSS background-shorthand property
+- Instead of typing this:
+
+	body {
+		background-color: #ffffff;
+		background-image: url("img_tree.png");
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+
+- Use this:
+
+	body {
+		background: #ffffff url("img_tree.png") no-repeat right top;
+	}
+
+- When you're using the shorthand, the format is:
+	{background:
+		background-color 
+		background-image 
+		background-repeat 
+		background-attachment
+		background-position;
+	}
+
+- It's ok if one of them is missing, the important is they are in right order.
