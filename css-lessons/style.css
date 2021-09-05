@@ -1,8 +1,8 @@
 /*id based selector*/
 #para1 {
-	text-align: center;
-	color: orange;
-	background-color: grey;
+  text-align: center;
+  color: orange;
+  background-color: grey;
 }
 
 
@@ -14,3 +14,10 @@
 
 .large {
   font-size: 300%;
+}
+
+body {
+  background:
+    url("bg.jpg") 
+    no-repeat;
+}
